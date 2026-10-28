@@ -2,7 +2,7 @@
 const TOTAL = 20;                  // number of photos: photo1.jpeg ... photo20.jpeg
 const EXT = "jpeg";                // file ending: jpeg, jpg or png
 const FEATURED = [1, 8, 15];       // photos shown big (wide)
-const CAPTIONS = {                 // optional text under a photo
+const CAPTIONS = { 4: "love you Eedo"                // optional text under a photo
   // 1: "Your caption here",
 };
 /* ===================== */
