@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="so">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Gallery</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>lion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>My Gallery</h1>
-        <p>My favorite memories</p>
-    </header>
+  <header class="hero">
+    <p class="eyebrow">Photo Collection</p>
+    <h1>CABDI <span>SALAAM</span></h1>
+    <p class="tagline">Moments worth keeping</p>
+    <div class="rule"><i></i><i></i><i></i></div>
+  </header>
 
-    <main class="gallery">
-      <img src="photo1.jpeg" alt="My photo 1">
-<img src="photo2.jpeg" alt="My photo 2">
-<img src="photo3.jpeg" alt="My photo 3">
-<img src="photo4.jpeg" alt="My photo 4">
-    </main>
+  <main id="gallery" class="gallery"></main>
 
-    <div class="lightbox" id="lightbox">
-        <button id="close" aria-label="Close">×</button>
-        <button id="prev" aria-label="Previous photo">❮</button>
-        <img id="lightbox-img" src="" alt="Full size photo">
-        <button id="next" aria-label="Next photo">❯</button>
-    </div>
+  <footer>&copy; Cabdi Gallery</footer>
 
-    <script src="script.js"></script>
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button id="close" aria-label="Close">&times;</button>
+    <button id="prev" aria-label="Previous photo">&lsaquo;</button>
+    <figure>
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-cap"></figcaption>
+    </figure>
+    <button id="next" aria-label="Next photo">&rsaquo;</button>
+    <span id="counter"></span>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
